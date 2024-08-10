@@ -1,0 +1,139 @@
+body{
+    padding: 50px;
+}
+#vid-container{
+    height: 600px;
+    width: 1000px;
+    /* border: 4px solid black; */
+    border-radius: 15px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+.search-box{
+    position: relative;
+    width: 800px;
+    height: 35px;
+    display: flex;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+}
+
+.search-bar{
+    width: 90%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn{
+    width: 10%;
+    height: 95%;
+    background: transparent;
+    padding: 5px;
+    border: none;
+}
+
+.search-btn img{
+    height: 100%;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#vid-Details{
+    display: flex;
+    flex-direction: column;
+}
+
+.channel{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.thumbnail{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.channel-name{
+    margin-left: 10px;
+}
+.title{
+    max-width: 1000px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.disc{
+    font-size: 1rem;
+    font-weight: 300;
+    width: 1000px;
+}
+
+@media screen and (max-width:368px) {
+    .logo{
+        height: 20px;
+        margin: 0 20px;
+    }
+    .search-box{
+        width: 50%;
+    }
+    .search-btn{
+        width: 30%;
+    }
+    .user-options{
+        display: none;
+    }
+    #vid-container{
+        width: 400px;
+        height: 300px;
+    }
+}
